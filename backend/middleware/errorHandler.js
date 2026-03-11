@@ -53,4 +53,5 @@ const notFound = (req, res, next) => {
     next(error);
 };
 
-module.exports = { errorHandler, notFound };
+// ES6 Module export (remove module.exports)
+export { errorHandler, notFound };
