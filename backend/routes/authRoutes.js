@@ -10,7 +10,7 @@ const router = express.Router();
 
 const registerValidation = [
     body('username')
-        .train()
+        .trim()
         .isLength({min: 3})
         .withMessage('Username must be at least 3 characters'),
     body('email')

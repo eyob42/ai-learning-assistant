@@ -18,6 +18,10 @@ const __dirname = path.dirname(__filename);
 //Initialize express app 
 const app = express();
 
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
+console.log("MONGO_URI:", process.env.MONGO_URI);
+console.log("Loaded ENV:", process.env);
+
 //connect to MongoDB
 connectDB();
 
